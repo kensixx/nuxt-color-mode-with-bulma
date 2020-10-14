@@ -1,0 +1,20 @@
+footer.footer {
+  border-top: $light-border;
+
+  .logo {
+    a {
+      display: block;
+      height: $footer-logo-height;
+    }
+    img, svg {
+      width: auto;
+      height: $footer-logo-height;
+    }
+  }
+}
+
+@include mobile {
+  .footer-copyright {
+    text-align: center;
+  }
+}

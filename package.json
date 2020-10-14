@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-color-mode-with-bulma",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "bulma": "^0.9.1",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "nuxt-svg-loader": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3"
+  }
+}
