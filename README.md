@@ -1,11 +1,6 @@
 # Nuxt Color Mode with Bulma
 
-<div class="myvideo">
-   <video  style="display:block; width:100%; height:auto;" autoplay controls loop="loop">
-       <source src="/assets/nuxt-color-mode-with-bulma-screen-capture.webm" type="video/webm"  />
-   </video>
-</div>
-
+![Video](assets/readme-assets/nuxt-color-mode-with-bulma-screen-capture.gif)
 
 <a name="RAwHh"></a>
 # Setup
@@ -33,7 +28,7 @@ npm i @nuxtjs/style-resources bulma nuxt-svg-loader
 
 <a name="lxMEc"></a>
 ## nuxt.config.js
-Remove `@nuxtjs/bulma` if you haven't yet. Moving forward we will use Bulma .scss that we `npm install`-ed earlier.<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/517147/1602668392892-10e2ba44-51cb-4dec-a1cc-cd6111b48272.png#align=left&display=inline&height=93&margin=%5Bobject%20Object%5D&name=image.png&originHeight=186&originWidth=1082&size=30966&status=done&style=none&width=541)<br />
+Remove `@nuxtjs/bulma` if you haven't yet. Moving forward we will use Bulma .scss that we `npm install`-ed earlier.<br />![image.png](assets/readme-assets/remove-bulma.png)<br />
 <br />Include these on your `modules[]`:
 ```shell
 modules: [
@@ -71,7 +66,7 @@ buildModules: [
 
 <a name="nxviJ"></a>
 # Adding light and dark icons for the toggle switch
-Create an `icons` directory inside `assets` like so, and add the `.svg` icons.<br />You can download the icons here: [https://github.com/nuxt-community/color-mode-module/tree/master/example/assets/icons](https://github.com/nuxt-community/color-mode-module/tree/master/example/assets/icons)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/517147/1602667391885-65cc9f57-3cdc-43c8-8ca7-d1fb849c4881.png#align=left&display=inline&height=85&margin=%5Bobject%20Object%5D&name=image.png&originHeight=170&originWidth=490&size=11246&status=done&style=none&width=245)<br />
+Create an `icons` directory inside `assets` like so, and add the `.svg` icons.<br />You can download the icons here: [https://github.com/nuxt-community/color-mode-module/tree/master/example/assets/icons](https://github.com/nuxt-community/color-mode-module/tree/master/example/assets/icons)<br />![svg-icons.png](assets/readme-assets/svg-icons.png)<br />
 
 <a name="e4DQn"></a>
 # Configuring our `main.scss`
@@ -164,7 +159,35 @@ This is a simple Button component that will help toggle `@nuxtjs/color-mode` whe
 
 <a name="AS2AU"></a>
 # Using the `ColorModePicker.vue` component
-I think that's it! You can now include the `ColorModePicker.vue` component anywhere in your code, for me I've put it in the Navbar beside the Brand Logo like so:<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/517147/1602667052405-9495ad60-082d-446e-b6d6-047a118b0491.png#align=left&display=inline&height=392&margin=%5Bobject%20Object%5D&name=image.png&originHeight=784&originWidth=958&size=124740&status=done&style=none&width=479)<br />**Note: remember to import this component like so:**
+I think that's it! You can now include the `ColorModePicker.vue` component anywhere in your code, for me I've put it in the Navbar beside the Brand Logo like so:<br />!
+
+```vue
+<template>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <nuxt-link class="navbar-item is-hoverable" to="/">
+          Nuxt Color Mode With Bulma
+        </nuxt-link>
+        <button class="button navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              <ColorModePicker />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
+```
+
+<br />**Note: remember to import this component like so:**
 ```vue
 <script>
 import ColorModePicker from '~/components/ColorModePicker'
