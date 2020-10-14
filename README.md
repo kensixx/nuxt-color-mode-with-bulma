@@ -50,7 +50,7 @@ buildModules: [
 ```
 
 <br />Add this on your `css[]`, and also add the new `styleResources{}` like so:<br />We'll setup our `assets/scss/main.scss` file later on below.
-```shell
+```javascript
   /*
    ** Global CSS
    */
@@ -107,10 +107,12 @@ So what we've done here is:
 1. Override some components like the Navbar, and so on
 1. Lastly, our dark mode implementation of the Bulma components when it is toggled on
 
-Next is to put the other supporting .scss files. You can get it here: <link>
+<br />Next is to put the other supporting .scss files. You can get it here: [https://github.com/kensixx/nuxt-color-mode-with-bulma/tree/main/assets/scss](https://github.com/kensixx/nuxt-color-mode-with-bulma/tree/main/assets/scss)
 
 <br />**I borrowed these .scss files on **[**admin-null-nuxt**](https://github.com/justboil/admin-null-nuxt)** Nuxt.js template (the free version one).**<br />
 <br />So we're done with the `.scss` files! What we need next is the actual toggling action of dark and light mode.<br />
+
+---
 
 <a name="iBmpt"></a>
 # Creating a Vue component that will serve as our light/dark toggle switch
