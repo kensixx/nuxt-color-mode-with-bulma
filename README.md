@@ -1,5 +1,12 @@
 # Nuxt Color Mode with Bulma
 
+# Introduction
+[@nuxtjs/color-mode](https://color-mode.nuxtjs.org/) is a Nuxt.js module that will help us implement a Dark Mode toggle on our Nuxt.js apps much easier.
+
+These are one of the ways on how you can leverage [@nuxtjs/color-mode](https://color-mode.nuxtjs.org/) if you're using Bulma.
+
+When using a CSS Framework such as Bulma, we need to override Bulma's `.scss` variables as stated in this guide. 
+
 ![Video](assets/readme-assets/nuxt-color-mode-with-bulma-screen-capture.gif)
 
 <a name="RAwHh"></a>
