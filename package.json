@@ -11,7 +11,7 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "bulma": "^0.9.1",
-    "core-js": "^3.6.5",
+    "core-js": "^3.20.2",
     "nuxt": "^2.14.6",
     "nuxt-svg-loader": "^1.2.0"
   },
