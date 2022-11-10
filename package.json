@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^8.0.0",
     "sass-loader": "^10.0.3"
   }
 }
